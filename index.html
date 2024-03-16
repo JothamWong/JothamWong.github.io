@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Jotham Wong</title>
+    <style>
+      :root {
+        /* Light theme */
+        --primary-bg-color: #f5f5f5;
+        --primary-text-color: #333;
+        --link-color: #1678c2;
+        --hr-color: #ccc;
+      }
+
+      body {
+        font-family: "Palanquin", monospace;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+        background-color: var(--primary-bg-color);
+        color: var(--primary-text-color);
+      }
+      .container {
+        width: 50%;
+        max-width: 66.66%; /* 2/3 of the viewport width */
+        padding: 0; /* no padding on the sides */
+        margin: 2em auto;
+        text-align: left; /* Left-justify the text */
+      }
+      a {
+        color: var(--link-color);
+      }
+      nav a {
+        margin-right: 1em;
+      }
+      nav a:last-child {
+        margin-right: 0;
+      }
+      hr {
+        border: 1px solid var(--hr-color);
+        width: 100%; /* make the line fill up the full width */
+      }
+      .name {
+        font-size: 1.5rem;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+      .centered-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        height: 100%;
+      }
+      h1,
+      h2,
+      p,
+      ul {
+        margin-top: 0.5em; /* adds some vertical space between text elements */
+        margin-bottom: 0.1em; /* adds some vertical space between text elements */
+      }
+      /* Media queries for responsiveness */
+      @media (max-width: 800px) {
+        .container {
+          width: 100%;
+        }
+        nav a {
+          margin-right: 0.5em;
+        }
+      }
+      button {
+        background-color: var(--primary-bg-color);
+        color: var(--primary-text-color);
+        border: 2px solid var(--link-color);
+        padding: 2px;
+        font-size: 1rem;
+        width: 2em;
+        height: 2em;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+        cursor: pointer;
+        outline: none;
+      }
+
+      button:hover {
+        background-color: var(--link-color);
+        color: var(--primary-bg-color);
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css?family=Comic+Neue"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container centered-content">
+      <div class="header">
+        <div class="name">Jotham Wong</div>
+        <nav>
+          <a href="./">about</a>
+        </nav>
+      </div>
+      <hr />
+      <h2>About</h2>
+      <p>
+        Hello! I am Jotham Wong and I am working towards my dream of becoming a professor. I am interested in systems research, notably distributed systems, cloud computing as well as low level computer architecture. I am currently working on a stream processing engine for my UROP. In a previous life, I was a software engineering intern at a Chinese social media company, a Southeast Asian food delivery company and a New York trading firm.
+      </p>
+      <h2>Life goals</h2>
+      <p>
+        Go to a nice grad school.
+        Come back to NUS as a professor and teach CS4225.
+        Demolish the bell curve.
+        Remove all MRQ and MCQ exam formats.
+        The ideal exam format is a mix of short answer questions as well as fair format questions.
+        Fair format questions involve a final answer and workings. If final answer is right, we are done. If it's not, award marks based on workings.
+        I also want to work on meaningful projects and write beautiful papers that people will read.
+        Have meaningful collaborations with smart students and industry researchers. SystemsResearch@Google is a goal.
+      </p>
+      <hr />
+      <img src="./turtle.jpg">
+      This turtle represents me.
+    </div>
+  </body>
+</html>
